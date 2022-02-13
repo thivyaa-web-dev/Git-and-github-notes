@@ -88,13 +88,25 @@
 -  git status 
 -  git add . 
 -  git stash 
--  
-- 
 
+## Making forked project even with the main project 
 
-- 
-- 
+- git fetch --all --prune
+- git reset --hard upstream/main
+- git log 
+- git push origin main 
+- git pull upstream main 
+- git push origin main 
 
+## Squashing Commits, Merge conflicts 
 
--
-- 
+- git branch temp 
+- git checkout temp 
+- touch 1 
+- git add . 
+- git commit -m "1"
+
+## Merge Conflicts
+
+- If there are many persons who are suggesting changes in the line number 3, git will get confused, 
+
